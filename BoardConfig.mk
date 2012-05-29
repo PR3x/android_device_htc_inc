@@ -97,6 +97,8 @@ COMMON_GLOBAL_CFLAGS += -DREFRESH_RATE=60
 TARGET_USE_OVERLAY := false
 TARGET_HAVE_BYPASS := false
 TARGET_USES_C2D_COMPOSITION := false
+# See http://review.cyanogenmod.com/#/c/16028/
+BOARD_ADRENO_DECIDE_TEXTURE_TARGET := true
 
 # Allow fallback to ashmem
 TARGET_GRALLOC_USES_ASHMEM := true
@@ -132,8 +134,9 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
 
-TARGET_KERNEL_CONFIG    := evervolv_incrediblec_defconfig
-TARGET_KERNEL_SOURCE    := kernel/htc/qsd8k
+# Wait until we have a kernel to build
+#TARGET_KERNEL_CONFIG    := evervolv_incrediblec_defconfig
+#TARGET_KERNEL_SOURCE    := kernel/htc/qsd8k
 TARGET_PREBUILT_KERNEL  := device/htc/inc/prebuilt/root/kernel
 
 BOARD_HAS_DATADATA := true
