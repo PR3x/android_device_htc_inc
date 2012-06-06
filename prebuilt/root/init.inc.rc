@@ -147,15 +147,6 @@ on boot
     write /sys/block/mtdblock3/bdi/read_ahead_kb 4
     write /sys/block/mtdblock6/bdi/read_ahead_kb 4
 
-    # KSM defaults
-    write /sys/kernel/mm/ksm/sleep_millisecs 3000
-    write /sys/kernel/mm/ksm/pages_to_scan 256
-    # Enable KSM
-    write /sys/kernel/mm/ksm/run 1
-
-    # enable nano editor usage through adb
-    export TERM linux
-
     # fix for app development
     chmod 777 /data/local
     chmod 777 /data/local/bin
@@ -208,3 +199,11 @@ service dmagent /system/bin/dmagent -N -P19 -VSY
     user root
     group radio cache inet misc
 
+service qcom-post-boot /system/bin/sh /system/etc/init.qcom.post_boot.sh
+    class late_start
+    user root
+    disabled
+    oneshot
+
+on property:dev.bootcomplete=1
+    start qcom-post-boot
