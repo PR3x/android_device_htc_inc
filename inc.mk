@@ -44,7 +44,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.telephony.call_ring.delay=3000 \
 	ro.setupwizard.enable_bypass=1 \
 	ro.media.dec.jpeg.memcap=20000000 \
-	ro.media.enc.jpeg.quality=95,85,70
+	ro.media.enc.jpeg.quality=95,85,70 \
+	com.qc.hdmi_out=false
 
 # Dalvik properties
 # dexop-flags: "v=" n|r|a, "o=" n|v|a|f, "m=y" register map
