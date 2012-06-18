@@ -17,7 +17,11 @@
 <!-- Inc-specific phone app resources. -->
 <resources>
 
-   <!-- OTA configuration values, used when provisioning CDMA devices.
+    <!-- Enable the onscreen touch UI for all states of the in-call UI. -->
+    <bool name="allow_incoming_call_touch_ui">true</bool>
+    <bool name="allow_in_call_touch_ui">true</bool>
+
+    <!-- OTA configuration values, used when provisioning CDMA devices.
          Following defaults values of zero means OTA UI is completely disabled.
          These OTA UI can be enabled by setting config value to one in the product
          specific overlay file -->
@@ -33,14 +37,6 @@
     <integer name="OtaShowActivateFailTimes">0</integer>
     <!-- Determine whether or not we should play the success/failure tone -->
     <integer name="OtaPlaySuccessFailureTone">0</integer>
-
-    <!-- This is a device with capacitive buttons, so disable the feature
-         where BACK rejects the current incoming call.  (Since it's so
-         easy to press the key accidentally as you pull the phone out of
-         your pocket.) -->
-    <!-- cuviper: not in ICS
-    <bool name="allow_back_key_to_reject_incoming_call">false</bool>
-    -->
 
     <!-- Enable the onscreen "Dial" button in the emergency dialer. -->
     <bool name="config_show_onscreen_dial_button">true</bool>
