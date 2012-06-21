@@ -17,10 +17,6 @@
 <!-- Inc-specific phone app resources. -->
 <resources>
 
-    <!-- Enable the onscreen touch UI for all states of the in-call UI. -->
-    <bool name="allow_incoming_call_touch_ui">true</bool>
-    <bool name="allow_in_call_touch_ui">true</bool>
-
     <!-- OTA configuration values, used when provisioning CDMA devices.
          Following defaults values of zero means OTA UI is completely disabled.
          These OTA UI can be enabled by setting config value to one in the product
