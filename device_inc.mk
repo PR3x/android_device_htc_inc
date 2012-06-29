@@ -125,6 +125,9 @@ $(call inherit-product-if-exists, vendor/htc/inc/inc-vendor.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# Call drk specific stuff
+$(call inherit-product, device/htc/inc/version.mk)
+
 
 PRODUCT_NAME := full_inc
 PRODUCT_DEVICE := inc
