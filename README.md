@@ -2,16 +2,14 @@ CM9 for the Droid Incredible
 
 ## Info
 
-|||
-|-----------------------------------:|:--------------------------|
-|**Discussion thread**: | http://forum.xda-developers.com/showthread.php?t=1558923
-|**Bug List**:		| https://docs.google.com/spreadsheet/ccc?key=0ArO-AoPZJh5KdHd4N3UxdzBObEtEbWViSVBaVlhVTFE#gid=0
-|**Original build instructions**:|http://forum.xda-developers.com/showpost.php?p=23905364&postcount=2
+[**XDA Discussion thread**](http://forum.xda-developers.com/showthread.php?t=1558923)
+
+[**Rootz Wiki Thread**](http://rootzwiki.com/topic/25204-romunofficial404-cyanogenmod-9-for-the-droid-incredible-04-jun/)
 
 ## Building 
 
 ### Initialize
-[setup linux/OS X](http://source.android.com/source/initializing.html) - Please note: it must be sun-java-6, not openjdk
+[Setup linux/OS X](http://source.android.com/source/initializing.html) - Please note: it must be sun-java-6, not openjdk
 
 ### Prepare to download sources
 ```bash
