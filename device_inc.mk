@@ -81,10 +81,9 @@ PRODUCT_COPY_FILES += \
 
 # Firmware
 PRODUCT_COPY_FILES += \
-    device/htc/inc/prebuilt/etc/firmware/bcm4329.hcd:system/etc/firmware/bcm4329.hcd \
-    device/htc/inc/prebuilt/etc/firmware/fw_bcm4329.bin:system/etc/firmware/fw_bcm4329.bin \
-    device/htc/inc/prebuilt/etc/firmware/fw_bcm4329_apsta.bin:system/etc/firmware/fw_bcm4329_apsta.bin
+    device/htc/inc/prebuilt/etc/firmware/bcm4329.hcd:system/etc/firmware/bcm4329.hcd
 
+#Vold mounts
 PRODUCT_COPY_FILES += \
     device/htc/inc/prebuilt/etc/vold.fstab:system/etc/vold.fstab
 
@@ -96,7 +95,6 @@ PRODUCT_COPY_FILES += \
 # Kernel modules
 ifeq (,$(BUILD_KERNEL))
 PRODUCT_COPY_FILES += \
-    device/htc/inc/prebuilt/lib/modules/bcm4329.ko:system/lib/modules/bcm4329.ko \
     device/htc/inc/prebuilt/lib/modules/ifb.ko:system/lib/modules/ifb.ko
 endif
 
@@ -105,9 +103,9 @@ endif
 #
 # Sensors
 PRODUCT_PACKAGES += \
+    gps.inc \
     lights.inc \
     sensors.inc
-#    gps.inc \
 #    camera.qsd8k
 
 # USB
